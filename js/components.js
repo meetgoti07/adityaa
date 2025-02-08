@@ -8838,7 +8838,7 @@ class SliderImages extends Slider {
 
 		// dragging
 		this.dragMouse = this.$slider.data('drag-mouse') || false;
-		this.dragCursor = this.$slider.data('drag-cursor') || false;
+		this.dragCursor = false;
 		this.dragClass = this.$slider.data('drag-class') || '';
 
 		// dots
@@ -9195,10 +9195,6 @@ class SliderFullscreenProjects extends Slider {
 					if (this.activeIndex === 0) {
 						// If on the first slide, move header to bottom smoothly
 						headerElement.classList.add('header--bottom');
-						headerElement.classList.add('hidden');
-						setTimeout(() => {
-							headerElement.classList.remove('hidden');
-						}, 700); // Matches the transition duration
 
 					} else if(this.activeIndex === 1) {
 						// For other slides, move header smoothly to the top
@@ -9218,7 +9214,7 @@ class SliderFullscreenProjects extends Slider {
 		}
 
 		return new Swiper(this.$sliderContent[0], {
-			// simulateTouch: this.dragMouse ? true : false,
+			simulateTouch: this.dragMouse ? true : false,
 			centeredSlides: true,
 			nested: true,
 			speed: this.sliderSpeed,
@@ -9696,16 +9692,3 @@ function syncAttributes($sourceElement, $targetElement) {
 
 
 })(jQuery);
-
-// Add event listener
-SliderImages.slider.on('activeIndexChange', function () {
-	let header = document.getElementById("page-header");
-
-	if (this.activeIndex === 0) {
-		header.classList.add("header--bottom");
-		header.classList.remove("header--top");
-	} else {
-		header.classList.add("header--top");
-		header.classList.remove("header--bottom");
-	}
-});
