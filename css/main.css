@@ -11354,11 +11354,25 @@ h2.change-text-white {
   transform: translateY(calc(100vh - 60px)); /* Move header smoothly to bottom */
 }
 
+.background-video {
+  width: auto;
+  height: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.video-border-radius {
+  border: 0;
+  border-radius: 10px;
+  height: 100%;
+  object-fit: cover;
+  opacity: 40%;
+}
+
 
 .image-radius {
   border: 0;
   border-radius: 16px;
-  width: 100%;
 }
 
 
