@@ -8991,7 +8991,8 @@ class SliderImages extends Slider {
 			// Add the on object to handle events
 			on: {
 				slideChange: function () {
-					let header = document.getElementById("page-header");
+					let header = document.getElementsByClassName("mg-page-header-main");
+
 					console.log('Active Index:', this.activeIndex); // Debugging
 
 					if (this.activeIndex === 0) {
@@ -9189,7 +9190,8 @@ class SliderFullscreenProjects extends Slider {
 			// Swiper event listener for smooth transition
 			on: {
 				slideChangeTransitionStart: function () {
-					const headerElement = document.getElementById('page-header');
+					const header = document.getElementsByClassName('mg-page-header-main');
+					const headerElement = header.item(0);
 					if (!headerElement) return;
 
 					if (this.activeIndex === 0) {
