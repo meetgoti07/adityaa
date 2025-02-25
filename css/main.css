@@ -3085,6 +3085,7 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   opacity: 0;
   visibility: hidden;
   pointer-events: initial;
+  padding-top: 0;
 }
 
 .header_menu-right .menu .sub-menu {
@@ -11355,7 +11356,7 @@ h2.change-text-white {
 
 /* Move header to bottom ONLY for the first slide */
 .header--bottom {
-  transform: translateY(calc(100vh - 60px)); /* Move header smoothly to bottom */
+  transform: translateY(calc(100svh - 60px)); /* Use smallest viewport height */
 }
 
 .background-video {
@@ -11400,5 +11401,5 @@ h2.change-text-white {
 
 
 .pad-top {
-  top : -1000%
+  top : calc(-90vh + 40px);
 }
