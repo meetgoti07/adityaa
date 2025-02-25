@@ -5162,7 +5162,7 @@ class Header {
 			})
 			.setCurtain(this.$curtain, {
 				background: this.overlayBackground,
-				y: '100%'
+				y: '-100%'
 			})
 			.set(this.$overlay, {
 				autoAlpha: 1,
@@ -9191,16 +9191,20 @@ class SliderFullscreenProjects extends Slider {
 			on: {
 				slideChangeTransitionStart: function () {
 					const header = document.getElementsByClassName('mg-page-header-main');
+					const subMenuHeader = document.getElementsByClassName('header__wrapper-overlay-menu');
 					const headerElement = header.item(0);
+					const subElement = subMenuHeader.item(0);
 					if (!headerElement) return;
 
 					if (this.activeIndex === 0) {
 						// If on the first slide, move header to bottom smoothly
 						headerElement.classList.add('header--bottom');
+						subElement.classList.add('pad-top');
 
-					} else if(this.activeIndex === 1) {
+					} else {
 						// For other slides, move header smoothly to the top
 						headerElement.classList.remove('header--bottom');
+						subElement.classList.remove('pad-top');
 					}
 				}
 			}

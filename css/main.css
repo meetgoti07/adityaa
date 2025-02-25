@@ -3058,6 +3058,9 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
 
 .header__wrapper-menu {
   position: relative;
+  align-items: center;
+  justify-content: center;
+  display: flex;
   width: 100%;
   max-width: 50%;
   margin: auto 0;
@@ -3065,9 +3068,10 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
 
 .header__wrapper-overlay-menu {
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   position: fixed;
-  top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
@@ -3263,23 +3267,23 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
 }
 
 .header.bg-dark-1 .header__burger-line, .header.bg-dark-2 .header__burger-line, .header.bg-dark-3 .header__burger-line, .header.bg-dark-4 .header__burger-line {
-  background-color: #fff;
+  background-color: #111111;
 }
 .header.bg-light-1 .header__burger-line, .header.bg-light-2 .header__burger-line, .header.bg-light-3 .header__burger-line, .header.bg-light-4 .header__burger-line, .header.bg-white .header__burger-line {
-  background-color: var(--color-gray-1);
+  background-color: #111111;
 }
 
 .header.opened[data-arts-header-overlay-theme=light] {
-  color: var(--color-dark-2);
+  color: #111111;
 }
 .header.opened[data-arts-header-overlay-theme=light] p, .header.opened[data-arts-header-overlay-theme=light] .paragraph {
   color: var(--color-dark-2);
 }
 .header.opened[data-arts-header-overlay-theme=light] .header__burger-line {
-  background-color: var(--color-gray-1);
+  background-color: #111111;
 }
 .header.opened[data-arts-header-overlay-theme=light] .header__burger:hover .header__burger-line {
-  background-color: var(--color-dark-2);
+  background-color: #111111;
 }
 .header.opened[data-arts-header-overlay-theme=light] a {
   color: var(--color-gray-1);
@@ -11375,4 +11379,26 @@ h2.change-text-white {
   border-radius: 16px;
 }
 
+.menu-item-has-children {
+  position: relative;
+}
 
+.menu-item-has-children ul {
+  position: absolute;
+  bottom: 100%; /* Makes the dropdown open upwards */
+  left: 0;
+  background: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1200;
+  display: none;
+  width: max-content;
+}
+
+.menu-item-has-children:hover ul {
+  display: block;
+}
+
+
+.pad-top {
+  top : -1000%
+}
