@@ -3075,6 +3075,7 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   justify-content: center;
   flex-wrap: wrap;
   position: fixed;
+  top: calc(-90vh + 40px);
   left: 0;
   width: 100vw;
   height: 100vh;
@@ -11413,5 +11414,5 @@ h2.change-text-white {
 
 
 .pad-top {
-  top : calc(-90vh + 40px);
+  top : 0;
 }

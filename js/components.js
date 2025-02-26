@@ -9199,12 +9199,12 @@ class SliderFullscreenProjects extends Slider {
 					if (this.activeIndex === 0) {
 						// If on the first slide, move header to bottom smoothly
 						headerElement.classList.add('header--bottom');
-						subElement.classList.add('pad-top');
+						subElement.classList.remove('pad-top');
 
 					} else {
 						// For other slides, move header smoothly to the top
 						headerElement.classList.remove('header--bottom');
-						subElement.classList.remove('pad-top');
+						subElement.classList.add('pad-top');
 					}
 				}
 			}
