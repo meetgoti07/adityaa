@@ -11368,7 +11368,7 @@ h2.change-text-white {
 
 /* Move header to bottom ONLY for the first slide */
 .header--bottom {
-  transform: translateY(calc(100svh - 60px)); /* Use smallest viewport height */
+  transform: translateY(calc(100dvh - 60px)); /* Use smallest viewport height */
 }
 
 .background-video {
