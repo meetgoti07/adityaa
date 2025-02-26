@@ -316,6 +316,9 @@ a:hover {
 .arrow:hover .arrow__pointer {
   background-color: var(--color-dark-2);
 }
+.arrow:hover .arrow__pointer-black {
+  background-color: #111111;
+}
 .arrow:hover .circle {
   stroke: var(--color-dark-2);
 }
@@ -4704,7 +4707,7 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   display: block;
   width: calc(1 * (60 * 1px));
   height: 1px;
-  background-color: var(--color-gray-1);
+  background-color: black;
 }
 @media screen and (min-width: 320px) {
   .section__headline {
@@ -7126,14 +7129,23 @@ small, .small {
   color: #fff;
 }
 [data-arts-theme-text=light] .arrow:hover .arrow__pointer {
-  background-color: #fff;
+  background-color: #111111;
 }
-[data-arts-theme-text=light] .arrow:hover .circle {
+[data-arts-theme-text=dark] .arrow:hover .circle {
   stroke: #fff;
+}
+.turn-arrow-dark:hover .circle-dark {
+  stroke: #111111;
 }
 [data-arts-theme-text=light] .arrow:hover .arrow__triangle {
   border-color: transparent transparent transparent #fff;
 }
+
+.arrow:hover .arrow__triangle-black {
+  border-color: transparent transparent transparent #111111;
+}
+
+
 [data-arts-theme-text=light] .filter__item {
   color: #fff;
   opacity: 0.3;
