@@ -9196,7 +9196,7 @@ class SliderFullscreenProjects extends Slider {
 					const subElement = subMenuHeader.item(0);
 					if (!headerElement) return;
 
-					if (this.activeIndex === 0) {
+					if (this.activeIndex === 0 && window.location.pathname === '/home.html') {
 						// If on the first slide, move header to bottom smoothly
 						headerElement.classList.add('header--bottom');
 						subElement.classList.remove('pad-top');
