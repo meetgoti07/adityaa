@@ -9701,14 +9701,15 @@ function syncAttributes($sourceElement, $targetElement) {
 
 
 // Load Lottie animation
-// Load the Lottie animation using fetch
-fetch('intro.json')
+
+fetch('animation.json')
 	.then(response => response.json())
 	.then(animationData => {
+		// Initialize Lottie animation
 		lottie.loadAnimation({
 			container: document.getElementById('lottie-animation'), // The container for the animation
 			renderer: 'svg', // Render as SVG
-			loop: true, // Loop the animation
+			loop: false, // Loop the animation
 			autoplay: true, // Start animation automatically
 			animationData: animationData // Pass the fetched animation data
 		});
@@ -9716,3 +9717,19 @@ fetch('intro.json')
 	.catch(error => {
 		console.error("Error loading Lottie animation:", error);
 	});
+
+// Function to hide the preloader and display the page content after exactly 7 seconds
+window.onload = function() {
+	const preloader = document.getElementById('preloader');
+	const content = document.getElementById('content');
+
+	// Show content and hide preloader after exactly 7 seconds
+	setTimeout(() => {
+		preloader.style.opacity = '0'; // Fade out the preloader
+		setTimeout(() => {
+			preloader.style.display = 'none'; // Hide the preloader
+			content.style.display = 'block'; // Show the page content
+		}, 100); // Wait for the fade-out to complete
+	}, 6700); // Ensure that the preloader stays visible for exactly 7 seconds
+};
+

@@ -11446,7 +11446,39 @@ h2.change-text-white {
 
 
 /* To make sure the Lottie animation has a defined size */
+/* Preloader Curtain Styles */
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: white; /* White background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+
+/* Lottie container for animation */
+/* Default styles for larger screens (desktop/tablet) */
 .lottie-container {
-  width: 200px; /* Set the width you want */
-  height: 200px; /* Set the height you want */
+  width: 40vw; /* 40% of the viewport width */
+  height: 40vh; /* 40% of the viewport height */
+}
+
+/* Mobile devices (adjust as needed) */
+@media (max-width: 767px) {
+  .lottie-container {
+    width: 70vw; /* 70% of the viewport width */
+    height: 70vh; /* 70% of the viewport height */
+  }
+}
+
+
+/* Hidden content */
+#content {
+  display: none;
 }
