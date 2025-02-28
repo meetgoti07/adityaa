@@ -11416,6 +11416,9 @@ h2.change-text-white {
   top : 0;
 }
 
+.pad-top-other {
+  top: 0;
+}
 .contact-container {
   flex: 1;
   display: flex;
