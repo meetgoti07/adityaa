@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8"/>
     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
-    <title>About Us</title>
+    <title>Rhye – AJAX Portfolio HTML5 Template</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <meta content="telephone=no" name="format-detection"/>
     <meta name="HandheldFriendly" content="true"/>
-    <meta name="description" content="About Us - Aaditya Solar"/>
+    <meta name="description" content="Rhye – AJAX Portfolio HTML5 Template"/>
     <!-- Google Fonts -->
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Cinzel:400,700%7CRaleway:500,500i,600,700%7CMaterial+Icons&amp;display=swap"/>
     <!-- Template Vendor's Stylesheet -->
@@ -38,23 +38,22 @@
     <div data-barba="wrapper">
       <!-- PAGE PRELOADER -->
       <!-- PAGE PRELOADER -->
-      <!-- PAGE PRELOADER -->
-<!--      <div class="preloader text-center bg-dark-2" id="js-preloader" data-arts-theme-text="dark">-->
-<!--        <div class="preloader__content">-->
-<!--          &lt;!&ndash; header &ndash;&gt;-->
-<!--          <div class="preloader__header mt-auto">-->
-<!--            <div class="preloader__heading">Adityaa Solar</div>-->
-<!--            <div class="preloader__subline small-caps mt-1">Adityaa Solar</div>-->
-<!--          </div>-->
-<!--          &lt;!&ndash; - header &ndash;&gt;-->
-<!--          &lt;!&ndash; counter &ndash;&gt;-->
-<!--          <div class="preloader__counter h5"><span class="preloader__counter-number preloader__counter-current">0</span><span class="preloader__counter-divider">&nbsp;&nbsp;/&nbsp;&nbsp;</span><span class="preloader__counter-number preloader__counter-total">100</span></div>-->
-<!--          &lt;!&ndash; - counter &ndash;&gt;-->
-<!--          &lt;!&ndash; circle holder &ndash;&gt;-->
-<!--          <div class="preloader__circle"></div>-->
-<!--          &lt;!&ndash; - circle holder &ndash;&gt;-->
-<!--        </div>-->
-<!--      </div>-->
+      <div class="preloader text-center bg-dark-2" id="js-preloader" data-arts-theme-text="light">
+        <div class="preloader__content">
+          <!-- header -->
+          <div class="preloader__header mt-auto">
+            <div class="preloader__heading">Adityaa Solar</div>
+            <div class="preloader__subline small-caps mt-1">Adityaa Solar</div>
+          </div>
+          <!-- - header -->
+          <!-- counter -->
+          <div class="preloader__counter h5"><span class="preloader__counter-number preloader__counter-current">0</span><span class="preloader__counter-divider">&nbsp;&nbsp;/&nbsp;&nbsp;</span><span class="preloader__counter-number preloader__counter-total">100</span></div>
+          <!-- - counter -->
+          <!-- circle holder -->
+          <div class="preloader__circle"></div>
+          <!-- - circle holder -->
+        </div>
+      </div>
       <!-- - PAGE PRELOADER -->
       <!-- Loading Spinner -->
       <svg class="spinner d-lg-none" id="js-spinner" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
@@ -169,7 +168,7 @@
         </div>
         <!-- - top bar -->
         <!-- fullscreen overlay container -->
-        <div class="header__wrapper-overlay-menu container-fluid container-fluid_paddings align-items-center align-content-center pad-top">
+        <div class="header__wrapper-overlay-menu container-fluid container-fluid_paddings align-items-center align-content-center ">
           <!-- fullscreen menu -->
           <div class="header__wrapper-menu flex-column align-items-center align-content-center">
             <ul class="menu-overlay js-menu-overlay">
@@ -195,410 +194,149 @@
       </header>
       <!-- - PAGE HEADER -->
       <!-- PAGE MAIN -->
-      <div class="js-smooth-scroll bg-light-1" id="page-wrapper" data-barba="container">
+      <div class="js-smooth-scroll bg-dark-1" id="page-wrapper" data-barba="container">
         <main class="page-wrapper__content">
           <!-- section MASTHEAD -->
-          <section class="section section-masthead pt-large pb-medium text-center" data-arts-os-animation="data-arts-os-animation" data-background-color="var(--color-light-1)">
-            <div class="section-masthead__inner container-fluid">
-              <header class="row section-masthead__header justify-content-center">
-                <div class="col-lg-8">
-                  <div class="section-masthead__subheading small-caps mt-0 mb-1 mb-md-2 split-text js-split-text" data-split-text-type="lines,words" data-split-text-set="words"><span>aaditya solar</span></div>
-                  <div class="w-100"></div>
-                  <div class="section-masthead__heading split-text js-split-text" data-split-text-type="lines,words" data-split-text-set="words">
-                    <h1 class="mt-0 mb-0 h2" style="color: #000000;">Empowering a Sustainable Future with Solar Energy</h1>
-                  </div>
-                  <div class="w-100" ></div>
-                  <div class="section__headline mt-2 mx-auto" style="color: #000000;"></div>
-                </div>
-              </header>
-            </div>
-          </section>
+          <section class="section section-masthead d-none" data-background-color="var(--color-dark-1)"></section>
           <!-- - section MASTHEAD -->
-          <!-- section ABOUT -->
-          <section class="section section-about section-content pb-3" data-arts-os-animation="data-arts-os-animation">
-            <div class="container-fluid section-about__content">
-              <div class="row no-gutters">
-                <div class="col-lg-6">
-                  <div class="section-content__image">
-                    <section class="section section-image z-50 section_h-800">
-                      <div class="section-image__wrapper" data-arts-parallax="data-arts-parallax" data-arts-parallax-factor="0.15">
-                        <div class="lazy"><img data-src="img/about/about2.jpg" src="#" alt=""/></div>
-                      </div>
-                    </section>
+          <!-- section PROJECTS SLIDER FULLSCREEN -->
+          <section class="section section-fullheight section-projects section-projects-slider bg-dark-1 overflow" data-arts-theme-text="light" data-arts-os-animation>
+            <div class="section-fullheight__inner section-fullheight__inner_mobile text-center">
+              <div class="slider slider-fullscreen-projects js-slider-fullscreen-projects js-slider">
+                <!-- slider CONTENT -->
+                <div class="slider-fullscreen-projects__content swiper-container pointer-events-none js-slider-fullscreen-projects__content">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="small-caps slider__subheading js-split-text split-text mb-1" data-split-text-type="lines, words, chars" data-split-text-set="chars">Adityaa Solar</div>
+                      <h2 class="h1 slider__heading js-split-text" data-split-text-type="lines, words, chars">Solar Panels</h2>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="small-caps slider__subheading js-split-text split-text mb-1" data-split-text-type="lines, words, chars" data-split-text-set="chars">Identity</div>
+                      <h2 class="h1 slider__heading js-split-text" data-split-text-type="lines, words, chars">Solar Cells</h2>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="small-caps slider__subheading js-split-text split-text mb-1" data-split-text-type="lines, words, chars" data-split-text-set="chars">Identity</div>
+                      <h2 class="h1 slider__heading js-split-text" data-split-text-type="lines, words, chars">Very Nice Product</h2>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="small-caps slider__subheading js-split-text split-text mb-1" data-split-text-type="lines, words, chars" data-split-text-set="chars">Photography</div>
+                      <h2 class="h1 slider__heading js-split-text" data-split-text-type="lines, words, chars">One Last Product</h2>
+                    </div>
                   </div>
-                  <div class="container-fluid">
-                    <div class="section-about__floating-image" data-arts-parallax="element" data-arts-parallax-y="-25%">
-                      <div class="w-100 h-100">
-                        <div data-arts-parallax="data-arts-parallax" data-arts-parallax-factor="0.1">
-                          <div class="lazy"><img data-src="img/about/about1.jpg" src="#" alt="" width="420" height="420"/></div>
+                </div>
+                <!-- - slider CONTENT -->
+                <!-- slider IMAGES -->
+                <div class="slider-fullscreen-projects__images swiper-container js-slider-fullscreen-projects__images" data-mousewheel-enabled="data-mousewheel-enabled" data-direction="horizontal" data-transition-effect="enterLeave" data-speed="1200" data-autoplay-enabled="false" data-autoplay-delay="6000" data-counter-style="roman" data-touch-ratio="1.5"  data-drag-class="slider-fullscreen-projects__images_scale-up">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide overflow">
+                      <div class="slider__images-slide-inner js-transition-img overflow" data-swiper-parallax="90%">
+                        <div class="slider__bg swiper-lazy js-transition-img__transformed-el">
+                          <div class="overlay overlay_dark"></div>
+                          <video autoplay muted loop playsinline>
+                            <source src="vid/sec4.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                          </video>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide overflow">
+                      <div class="slider__images-slide-inner js-transition-img overflow" data-swiper-parallax="90%">
+                        <div class="slider__bg swiper-lazy js-transition-img__transformed-el">
+                          <div class="overlay overlay_dark"></div>
+                          <video autoplay muted loop playsinline>
+                            <source src="vid/sec2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                          </video>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide overflow">
+                      <div class="slider__images-slide-inner js-transition-img overflow" data-swiper-parallax="90%">
+                        <div class="slider__bg swiper-lazy js-transition-img__transformed-el">
+                          <div class="overlay overlay_dark"></div>
+                          <video autoplay muted loop playsinline>
+                            <source src="vid/sec4.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                          </video>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide overflow">
+                      <div class="slider__images-slide-inner js-transition-img overflow" data-swiper-parallax="90%">
+                        <div class="slider__bg swiper-lazy js-transition-img__transformed-el">
+                          <div class="overlay overlay_dark"></div>
+                          <video autoplay muted loop playsinline>
+                            <source src="vid/sec2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                          </video>
                         </div>
                       </div>
                     </div>
                   </div>
+                  <!-- overlay-->
+                  <div class="slider__overlay overlay overlay_dark"></div>
+                  <!-- - overlay-->
                 </div>
-                <div class="col-lg-6">
-                  <div class="pl-md-5">
-                    <section class="section section-content clearfix" data-arts-os-animation="data-arts-os-animation">
-                      <div class="section-content__inner">
-                        <div class="w-100"></div>
-                        <div class="section-content__text split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines">
-                          <p>At Aaditya we are committed to revolutionizing the way the world harnesses energy. As a leading solar panel manufacturing and installation company, we specialize in providing high-quality, efficient, and sustainable energy solutions for residential, commercial, and industrial needs. Our mission is to reduce carbon footprints and promote clean, renewable energy by delivering innovative solar technology and exceptional service.</p>
-                          <p>With a dedicated team of experts, state-of-the-art technology, and a passion for sustainability, we handle every step of the process—from manufacturing premium solar panels to seamless installation and maintenance. We believe in empowering our clients to take control of their energy consumption, reduce utility costs, and contribute to a greener planet. Whether you are looking to power your home, business, or community, Aaditya is your trusted partner in building a brighter, sustainable future.</p>
-                        </div>
+                <!-- - slider IMAGES -->
+                <!-- slider FOOTER -->
+                <div class="slider-fullscreen-projects__footer swiper-container js-slider-fullscreen-projects__footer">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="slider__wrapper-button-footer"><a class="button button_white button_bordered" href="index.html" data-pjax-link="fullscreenSlider"><span class="button__label-hover">Go Back</span></a>
                       </div>
-                    </section>
-                    <aside class="aside aside-counters">
-                      <div class="row">
-                        <div class="col-6 mt-small">
-                          <div class="counter js-counter" data-counter-start="0" data-counter-target="500" data-counter-duration="2">
-                            <!-- animated number -->
-                            <div class="counter__number js-counter__number" style="color: #000000;">500</div>
-                            <!-- - animated number -->
-                            <div class="counter__label" style="color: #000000;">Successful Installation</div>
-                          </div>
-                        </div>
-                        <div class="col-6 mt-small">
-                          <div class="counter js-counter" data-counter-start="0" data-counter-target="10" data-counter-duration="2">
-                            <!-- animated number -->
-                            <div class="counter__number js-counter__number" style="color: #000000;">10</div>
-                            <!-- - animated number -->
-                            <div class="counter__label" style="color: #000000;">Years Industry Experience</div>
-                          </div>
-                        </div>
-                        <div class="col-6 mt-small">
-                          <div class="counter js-counter" data-counter-start="0" data-counter-target="100" data-counter-duration="2">
-                            <!-- animated number -->
-                            <div class="counter__number js-counter__number" style="color: #000000;">100</div>
-                            <!-- - animated number -->
-                            <div class="counter__label" style="color: #000000;">Customer Satisfaction</div>
-                          </div>
-                        </div>
-                        <div class="col-6 mt-small">
-                          <div class="counter js-counter" data-counter-start="0" data-counter-target="50000" data-counter-duration="2">
-                            <!-- animated number -->
-                            <div class="counter__number js-counter__number" style="color: #000000;">50000</div>
-                            <!-- - animated number -->
-                            <div class="counter__label" style="color: #000000;">Tons of CO2 Reduced</div>
-                          </div>
-                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="slider__wrapper-button-footer"><a class="button button_white button_bordered" href="index.html" data-pjax-link="fullscreenSlider"><span class="button__label-hover">Go Back</span></a>
                       </div>
-                    </aside>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <!-- section TESTIMONIALS -->
-          <section class="section section-testimonials bg-white pt-medium pb-medium pb-medium">
-            <div class="swiper-container slider slider-testimonials js-slider-testimonials" data-speed="2000">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="container figure-testimonial text-center">
-                    <div class="row justify-content-center">
-                      <!-- content -->
-                      <div class="col-lg-8">
-                        <div class="figure-testimonial__sign mx-auto"><img src="img/general/quote-black.svg" alt="alt"/></div>
-                        <div class="slider-testimonials__text split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines">
-                          <blockquote class="figure-testimonial__text" style="color: #000000;">The team at Aaditya made switching to solar effortless. Their professionalism and expertise were evident from start to finish!</blockquote>
-                          <div class="figure-testimonial__author small-caps mt-2">Sarah Thompson</div>
-                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="slider__wrapper-button-footer"><a class="button button_white button_bordered" href="index.html" data-pjax-link="fullscreenSlider"><span class="button__label-hover">Go Back</span></a>
                       </div>
-                      <!-- - content -->
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="slider__wrapper-button-footer"><a class="button button_white button_bordered" href="index.html" data-pjax-link="fullscreenSlider"><span class="button__label-hover">Go Back</span></a>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="swiper-slide">
-                  <div class="container figure-testimonial text-center">
-                    <div class="row justify-content-center">
-                      <!-- content -->
-                      <div class="col-lg-8">
-                        <div class="figure-testimonial__sign mx-auto"><img src="img/general/quote-black.svg" alt="alt"/></div>
-                        <div class="slider-testimonials__text split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines">
-                          <blockquote class="figure-testimonial__text" style="color: #000000;">We’ve seen a significant reduction in our energy bills since installing solar panels. The quality of work and service was outstanding!</blockquote>
-                          <div class="figure-testimonial__author small-caps mt-2">Paul Rand</div>
-                        </div>
-                      </div>
-                      <!-- - content -->
+                <!-- - slider FOOTER -->
+                <!-- slider COUNTER -->
+                <div class="slider__wrapper-counter slider-fullscreen-projects__counter">
+                  <div class="slider__counter slider__counter_current">
+                    <div class="js-slider-fullscreen-projects__counter-current swiper-container">
+                      <div class="swiper-wrapper"></div>
                     </div>
                   </div>
+                  <div class="slider__counter-divider slider-fullscreen__counter-divider"></div>
+                  <div class="slider__counter slider__counter_total js-slider-fullscreen-projects__counter-total"></div>
                 </div>
-                <div class="swiper-slide">
-                  <div class="container figure-testimonial text-center">
-                    <div class="row justify-content-center">
-                      <!-- content -->
-                      <div class="col-lg-8">
-                        <div class="figure-testimonial__sign mx-auto"><img src="img/general/quote-black.svg" alt="alt"/></div>
-                        <div class="slider-testimonials__text split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines">
-                          <blockquote class="figure-testimonial__text" style="color: #000000;">Highly recommend Aaditya! They delivered on time, and their support team was there every step of the way.</blockquote>
-                          <div class="figure-testimonial__author small-caps mt-2">Irene Braswell</div>
-                        </div>
-                      </div>
-                      <!-- - content -->
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="container figure-testimonial text-center">
-                    <div class="row justify-content-center">
-                      <!-- content -->
-                      <div class="col-lg-8">
-                        <div class="figure-testimonial__sign mx-auto"><img src="img/general/quote-black.svg" alt="alt"/></div>
-                        <div class="slider-testimonials__text split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines">
-                          <blockquote class="figure-testimonial__text" style="color: #000000;">From consultation to installation, everything was smooth and professional. We are thrilled with our solar setup!</blockquote>
-                          <div class="figure-testimonial__author small-caps mt-2">Rhye Kinsey</div>
-                        </div>
-                      </div>
-                      <!-- - content -->
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="container figure-testimonial text-center">
-                    <div class="row justify-content-center">
-                      <!-- content -->
-                      <div class="col-lg-8">
-                        <div class="figure-testimonial__sign mx-auto"><img src="img/general/quote-black.svg" alt="alt"/></div>
-                        <div class="slider-testimonials__text split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines">
-                          <blockquote class="figure-testimonial__text" style="color: #000000;">We love to design handcrafted intefraces and stylish interactions. We believe good design solves business problems. With passion, we deliver digital projects that impact people lifes.</blockquote>
-                          <div class="figure-testimonial__author small-caps mt-2">Jacqueline Richards</div>
-                        </div>
-                      </div>
-                      <!-- - content -->
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- slider FOOTER -->
-              <div class="container slider-testimonials__footer mt-xsmall">
-                <div class="row justify-content-center align-items-center slider-testimonials__row no-gutters">
-                  <!-- slider DOTS -->
-                  <div class="col-auto">
-                    <div class="slider__dots js-slider__dots">
-                      <div class="slider__dot slider__dot_active">
-                        <svg class="svg-circle" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                          <circle class="circle" cx="30" cy="30" r="29" fill="none"></circle>
-                        </svg>
-                      </div>
-                      <div class="slider__dot">
-                        <svg class="svg-circle" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                          <circle class="circle" cx="30" cy="30" r="29" fill="none"></circle>
-                        </svg>
-                      </div>
-                      <div class="slider__dot">
-                        <svg class="svg-circle" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                          <circle class="circle" cx="30" cy="30" r="29" fill="none"></circle>
-                        </svg>
-                      </div>
-                      <div class="slider__dot">
-                        <svg class="svg-circle" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                          <circle class="circle" cx="30" cy="30" r="29" fill="none"></circle>
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- - slider DOTS -->
-                </div>
-              </div>
-              <!-- - slider FOOTER -->
-              <!-- slider ARROWS -->
-              <div class="slider-testimonials__arrows container-fluid">
-                <div class="slider__arrow slider__arrow_left js-slider__arrow-prev">
+                <!-- - slider COUNTER -->
+                <!-- slider ARROWS -->
+                <div class="slider__arrow slider__arrow_left slider__arrow_absolute js-slider__arrow-prev">
                   <div class="arrow arrow-left js-arrow" data-arts-cursor="data-arts-cursor" data-arts-cursor-hide-native="true" data-arts-cursor-scale="0" data-arts-cursor-magnetic="data-arts-cursor-magnetic">
-                    <svg class="svg-circle turn-arrow-dark" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                      <circle class="circle circle-dark turn-arrow-dark" cx="30" cy="30" r="29" fill="none"></circle>
+                    <svg class="svg-circle" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <circle class="circle" cx="30" cy="30" r="29" fill="none"></circle>
                     </svg>
-                    <div class="arrow__pointer arrow-left__pointer arrow__pointer-black"></div>
-                    <div class="arrow__triangle arrow__triangle-black" ></div>
+                    <div class="arrow__pointer arrow-left__pointer"></div>
+                    <div class="arrow__triangle"></div>
                   </div>
                 </div>
-
-                <div class="slider__arrow slider__arrow_right js-slider__arrow-next">
+                <div class="slider__arrow slider__arrow_right slider__arrow_absolute js-slider__arrow-next">
                   <div class="arrow arrow-right js-arrow" data-arts-cursor="data-arts-cursor" data-arts-cursor-hide-native="true" data-arts-cursor-scale="0" data-arts-cursor-magnetic="data-arts-cursor-magnetic">
-                    <svg class="svg-circle turn-arrow-dark" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                      <circle class="circle circle-dark turn-arrow-dark" cx="30" cy="30" r="29" fill="none"></circle>
+                    <svg class="svg-circle" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <circle class="circle" cx="30" cy="30" r="29" fill="none"></circle>
                     </svg>
-                    <div class="arrow__pointer arrow-right__pointer arrow__pointer-black"></div>
-                    <div class="arrow__triangle arrow__triangle-black"></div>
+                    <div class="arrow__pointer arrow-right__pointer"></div>
+                    <div class="arrow__triangle"></div>
                   </div>
                 </div>
-              </div>
-              <!-- - slider ARROWS -->
-            </div>
-          </section>
-          <!-- - section TESTIMONIALS -->
-          <!-- section CONTENT #2 -->
-          <section class="section section-content clearfix pt-medium pb-small text-center" data-arts-os-animation="data-arts-os-animation">
-            <div class="section-content__inner">
-              <div class="w-100"></div>
-              <div class="section__headline mb-1 mb-md-2 mx-auto"></div>
-              <div class="w-100"></div>
-              <div class="section-content__heading split-text js-split-text" data-split-text-type="lines,words" data-split-text-set="words">
-                <h2 style="color: #000000;">Partners</h2>
+                <!-- - slider ARROWS -->
               </div>
             </div>
           </section>
-          <!-- - section CONTENT #2 -->
-          <!-- section LOGOS -->
-          <section class="section section-logos section-grid pb-medium" data-arts-os-animation="data-arts-os-animation" data-grid-columns="3" data-grid-columns-tablet="2" data-grid-columns-mobile="1">
-            <div class="container">
-              <div class="row row-gutters justify-content-center">
-                <div class="col-lg-4 col-gutters">
-                  <div class="section-grid__item">
-                    <div class="figure-logo grayscale bg-white"><img src="img/assets/sectionLogos/logo-1.png" alt=""/>
-                      <div class="figure-logo__description">
-                        <p>Vintage Handmade</p>
-                        <div class="figure-logo__line"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-gutters">
-                  <div class="section-grid__item">
-                    <div class="figure-logo grayscale bg-white"><img src="img/assets/sectionLogos/logo-2.png" alt=""/>
-                      <div class="figure-logo__description">
-                        <p>A &amp; G Collection</p>
-                        <div class="figure-logo__line"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-gutters">
-                  <div class="section-grid__item">
-                    <div class="figure-logo grayscale bg-white"><img src="img/assets/sectionLogos/logo-3.png" alt=""/>
-                      <div class="figure-logo__description">
-                        <p>Steak House</p>
-                        <div class="figure-logo__line"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-gutters">
-                  <div class="section-grid__item">
-                    <div class="figure-logo grayscale bg-white"><img src="img/assets/sectionLogos/logo-4.png" alt=""/>
-                      <div class="figure-logo__description">
-                        <p>LSE</p>
-                        <div class="figure-logo__line"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-gutters">
-                  <div class="section-grid__item">
-                    <div class="figure-logo grayscale bg-white"><img src="img/assets/sectionLogos/logo-5.png" alt=""/>
-                      <div class="figure-logo__description">
-                        <p>Minimal</p>
-                        <div class="figure-logo__line"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-gutters">
-                  <div class="section-grid__item">
-                    <div class="figure-logo grayscale bg-white"><img src="img/assets/sectionLogos/logo-6.png" alt=""/>
-                      <div class="figure-logo__description">
-                        <p>Design Studio</p>
-                        <div class="figure-logo__line"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-gutters">
-                  <div class="section-grid__item">
-                    <div class="figure-logo grayscale bg-white"><img src="img/assets/sectionLogos/logo-7.png" alt=""/>
-                      <div class="figure-logo__description">
-                        <p>Brand Industry</p>
-                        <div class="figure-logo__line"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-gutters">
-                  <div class="section-grid__item">
-                    <div class="figure-logo grayscale bg-white"><img src="img/assets/sectionLogos/logo-8.png" alt=""/>
-                      <div class="figure-logo__description">
-                        <p>Big Enough</p>
-                        <div class="figure-logo__line"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-gutters">
-                  <div class="section-grid__item">
-                    <div class="figure-logo grayscale bg-white"><img src="img/assets/sectionLogos/logo-9.png" alt=""/>
-                      <div class="figure-logo__description">
-                        <p>Design Industry</p>
-                        <div class="figure-logo__line"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <!-- - section LOGOS -->
+          <!-- - section PROJECTS SLIDER FULLSCREEN -->
         </main>
         <!-- PAGE FOOTER -->
-        <footer class="footer container-fluid" id="page-footer"  data-arts-footer-logo="primary">
-          <!-- widgets top area -->
-          <div class="footer__area pt-md-5 pt-sm-3 pb-md-3 pb-sm-1 pt-2 pb-0 footer__area-border-top">
-            <div class="row">
-              <!-- call to action -->
-              <div class="col-lg-5">
-                <section class="widget widget_rhye_cta">
-                  <!-- header -->
-                  <h2 class="h2 mt-0 mb-0-5" style="color: #111111">Ready to Capture the Moments?</h2>
-                  <!-- - header -->
-                  <!-- button --><a class="button button_solid button_black mb-0-5" data-hover="Get in Touch" href="page-inner-contacts-1.html"><span class="button__label-hover">Get in Touch</span></a>
-                  <!-- - button -->
-                </section>
-              </div>
-            </div>
-          </div>
-          <!-- - widgets top area -->
-          <!-- widgets bottom area -->
-          <div class="footer__area footer__area-border-top pt-sm-3 pb-sm-1 pt-2 pb-0">
-            <div class="row align-items-center">
-              <!-- widget LOGO -->
-              <div class="col-lg-3 footer__column text-center text-lg-left order-lg-1">
-                <section class="widget widget_rhye_logo">
-                  <!-- content --><a class="logo" href="index.html">
-                    <div class="logo__wrapper-img">
-                      <!-- primary logo version (for light backgrounds)--><img class="logo__img-primary" src="img/general/logo_adityaa.svg" alt="Rhye HTML5 Template" height="20"/>
-                      <!-- secondary logo version (for dark backgrounds)--><img class="logo__img-secondary" src="img/general/logo_adityaa.svgg" alt="Rhye HTML5 Template" height="20"/>
-                    </div></a>
-                  <!-- - content -->
-                </section>
-              </div>
-              <!-- - widget LOGO -->
-              <!-- widget SOCIAL -->
-              <div class="col-lg-3 footer__column text-center text-lg-right order-lg-3">
-                <section class="widget widget_rhye_social">
-                  <!-- content -->
-                  <ul class="social">
-                    <li class="social__item"><a class="fa fa-facebook-f" href="#"></a></li>
-                    <li class="social__item"><a class="fa fa-twitter" href="#"></a></li>
-                    <li class="social__item"><a class="fa fa-instagram" href="#"></a></li>
-                    <li class="social__item"><a class="fa fa-behance" href="#"></a></li>
-                  </ul>
-                  <!-- - content -->
-                </section>
-              </div>
-              <!-- - widget SOCIAL -->
-              <!-- widget TEXT -->
-              <div class="col-lg-6 footer__column text-center text-lg-center order-lg-2">
-                <section class="widget widget_text">
-                  <!-- content -->
-                  <div class="textwidget">
-                    <p><small>© 2025 Aaditya Solar</small></p>
-                  </div>
-                  <!-- - content -->
-                </section>
-              </div>
-              <!-- - widget TEXT -->
-            </div>
-          </div>
-          <!-- - widgetst bottom area -->
-        </footer>
         <!-- - PAGE FOOTER -->
       </div>
       <!-- - PAGE MAIN -->
