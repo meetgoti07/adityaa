@@ -9196,7 +9196,7 @@ class SliderFullscreenProjects extends Slider {
 					const subElement = subMenuHeader.item(0);
 					if (!headerElement) return;
 
-					if (this.activeIndex === 0 && window.location.pathname === '/') {
+					if (this.activeIndex === 0) {
 						// If on the first slide, move header to bottom smoothly
 						headerElement.classList.add('header--bottom');
 						subElement.classList.remove('pad-top');
@@ -9698,3 +9698,21 @@ function syncAttributes($sourceElement, $targetElement) {
 
 
 })(jQuery);
+
+
+// Load Lottie animation
+// Load the Lottie animation using fetch
+fetch('intro.json')
+	.then(response => response.json())
+	.then(animationData => {
+		lottie.loadAnimation({
+			container: document.getElementById('lottie-animation'), // The container for the animation
+			renderer: 'svg', // Render as SVG
+			loop: true, // Loop the animation
+			autoplay: true, // Start animation automatically
+			animationData: animationData // Pass the fetched animation data
+		});
+	})
+	.catch(error => {
+		console.error("Error loading Lottie animation:", error);
+	});

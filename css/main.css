@@ -11443,3 +11443,10 @@ h2.change-text-white {
   background-color: #000;
   border-color: #000;
 }
+
+
+/* To make sure the Lottie animation has a defined size */
+.lottie-container {
+  width: 200px; /* Set the width you want */
+  height: 200px; /* Set the height you want */
+}
