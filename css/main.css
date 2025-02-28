@@ -11412,7 +11412,31 @@ h2.change-text-white {
   display: block;
 }
 
-
 .pad-top {
   top : 0;
+}
+
+.contact-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.form-container {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+.form-floating > label {
+  color: #6c757d;
+}
+.contact-info {
+  padding: 2rem;
+}
+.btn-primary {
+  background-color: #212529;
+  border-color: #212529;
+}
+.btn-primary:hover {
+  background-color: #000;
+  border-color: #000;
 }
