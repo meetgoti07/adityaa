@@ -20,42 +20,63 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: #f0f0f0; /* Light background color */
+      background-color: #ffffff;
     }
 
-    /* Container for logo and button */
+    /* Container for logo */
     .container {
       text-align: center;
       align-items: center;
-      display: flex;
+      display: none; /* Changed from opacity: 0 to display: none */
       flex-direction: column;
     }
 
     /* Big logo */
     .logo {
-      width: 50vw; /* Adjust as needed */
+      width: 50vw;
       height: auto;
-      margin-bottom: 20px;
     }
 
-    /* Enter button style */
-    .enter-btn {
-      width: fit-content;
-      padding: 10px 20px;
-      background-color: #000000; /* Blue color */
-      color: white;
-      text-decoration: none;
-      font-size: 18px;
-      border-radius: 5px;
-      transition: background-color 0.3s ease;
+    /* Preloader styles */
+    .preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      opacity: 1;
+      transition: opacity 1s ease-out;
+      pointer-events: none;
     }
 
-    .enter-btn:hover {
-      background-color: #494949; /* Darker blue when hovered */
-      cursor: pointer;
+    /* Lottie container styles */
+    .lottie-container {
+      width: 40vw;
+      height: 40vh;
     }
 
+    @media (max-width: 767px) {
+      .lottie-container {
+        width: 70vw;
+        height: 70vh;
+      }
+    }
 
+    /* Added fade-in animation */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .content-visible {
+      display: flex !important;
+      animation: fadeIn 1s ease-in forwards;
+    }
   </style>
   <link rel="stylesheet" type="text/css" href="css/main.css"/>
 </head>
@@ -63,15 +84,39 @@
 <div id="preloader" class="preloader">
   <div id="lottie-animation" class="lottie-container"></div>
 </div>
-<div class="container">
-  <img src="img/general/logo_adityaa.svg" alt="Logo" class="logo"> <!-- Replace with the path to your logo -->
-  <a href="home.html" class="enter-btn">Enter the Site</a>
+<div id="content" class="container">
+  <img src="img/general/logo.png" alt="Logo" class="logo">
 </div>
 
-<!-- - Slider Textures Shaders -->
 <!-- VENDOR SCRIPTS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js"></script>
 <script src="js/vendor.js"></script>
 <script src="js/components.js"></script>
+
+<script>
+  window.onload = function() {
+    const preloader = document.getElementById('preloader');
+    const content = document.getElementById('content');
+
+    // After preloader (7 seconds)
+    setTimeout(() => {
+      // Fade out preloader
+      preloader.style.opacity = '0';
+
+      // Show and fade in content
+      content.classList.add('content-visible');
+
+      // Remove preloader after fade
+      setTimeout(() => {
+        preloader.remove();
+      }, 1000);
+
+      // Wait 3 more seconds then redirect
+      setTimeout(() => {
+        window.location.href = 'home.html';
+      }, 3000);
+    }, 6700);
+  };
+</script>
 </body>
 </html>

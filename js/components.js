@@ -466,42 +466,46 @@ class Animations {
   }
 
   _setCurtain() {
-    gsap.registerEffect({
-      name: 'setCurtain',
-      effect: (target, config) => {
-        const
-          tl = new gsap.timeline(),
-          $target = $(target);
+		gsap.registerEffect({
+			name: 'setCurtain',
+			effect: (target, config) => {
+				const
+					tl = new gsap.timeline(),
+					$target = $(target);
 
-        if (!$target.length) {
-          return tl;
-        }
+				if (!$target.length) {
+					return tl;
+				}
 
-        const
-          $svg = $target.find('.curtain-svg'),
-          $normal = $target.find('.curtain-svg__normal'),
-          $curve = $target.find('.curtain-svg__curve'),
-          $rect = $target.find('.curtain__rect');
+				const
+					$svg = $target.find('.curtain-svg'),
+					$normal = $target.find('.curtain-svg__normal'),
+					$curve = $target.find('.curtain-svg__curve'),
+					$rect = $target.find('.curtain__rect');
 
-        tl
-          .set($target, {
-            display: 'none',
-            autoAlpha: 1,
-            y: config.y
-          })
-          .set($svg, {
-            fill: config.background,
-          });
+				tl
+					.set($target, {
+						display: 'none',
+						autoAlpha: 1,
+						y: config.y,
+						backgroundColor: 'white' // Add this line
+					})
+					.set($svg, {
+						fill: 'white', // Ensure this is white
+						backgroundColor: 'white' // Add this line
+					})
+					.set([$normal, $curve], { // Also set fill for these elements
+						fill: 'white'
+					});
 
-        return tl;
-
-      },
-      extendTimeline: true,
-      defaults: {
-        y: '100%'
-      }
-    });
-  }
+				return tl;
+			},
+			extendTimeline: true,
+			defaults: {
+				y: '100%'
+			}
+		});
+	}
 
   _moveCurtain() {
     gsap.registerEffect({
@@ -9191,12 +9195,12 @@ class SliderFullscreenProjects extends Slider {
 			on: {
 				slideChangeTransitionStart: function () {
 					const header = document.getElementsByClassName('mg-page-header-main');
-					const subMenuHeader = document.getElementsByClassName('header__wrapper-overlay-menu');
+					const subMenuHeader = document.getElementsByClassName('mg-header__wrapper-overlay-menu');
 					const headerElement = header.item(0);
 					const subElement = subMenuHeader.item(0);
 					if (!headerElement) return;
 
-					if (this.activeIndex === 0 && window.location.pathname === '/home.html') {
+					if (this.activeIndex === 0) {
 						// If on the first slide, move header to bottom smoothly
 						headerElement.classList.add('header--bottom');
 						subElement.classList.remove('pad-top');
@@ -9723,13 +9727,21 @@ window.onload = function() {
 	const preloader = document.getElementById('preloader');
 	const content = document.getElementById('content');
 
-	// Show content and hide preloader after exactly 7 seconds
 	setTimeout(() => {
-		preloader.style.opacity = '0'; // Fade out the preloader
-		setTimeout(() => {
-			preloader.style.display = 'none'; // Hide the preloader
-			content.style.display = 'block'; // Show the page content
-		}, 100); // Wait for the fade-out to complete
-	}, 6700); // Ensure that the preloader stays visible for exactly 7 seconds
-};
+		// Start fading out the preloader
+		preloader.style.opacity = '0';
 
+		// Show content and start its fade-in
+		content.style.display = 'block';
+
+		// Small delay to ensure display: block has taken effect
+		setTimeout(() => {
+			content.classList.add('content-visible');
+		}, 50);
+
+		// Remove preloader from DOM after fade-out is complete
+		setTimeout(() => {
+			preloader.remove();
+		}, 1000); // Match this with the transition duration
+	}, 6700);
+};

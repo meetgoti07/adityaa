@@ -85,19 +85,19 @@
       </div>
       <!-- - header curtain show/hide -->
       <!-- header curtain AJAX transition -->
-      <div class="header-curtain header-curtain_transition curtain" id="js-header-curtain-transition">
-        <div class="curtain__wrapper-svg">
-          <svg class="curtain-svg" viewBox="0 0 1920 1080" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <div class="header-curtain header-curtain_transition curtain" id="js-header-curtain-transition" style="background-color: white">
+        <div class="curtain__wrapper-svg" style="background-color: white">
+          <svg class="curtain-svg" fill="white" viewBox="0 0 1920 1080" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <!-- Default Rectangle -->
-            <path class="curtain-svg__normal" d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z"></path>
+            <path class="curtain-svg__normal" fill="white" style="background-color: white;" d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z"></path>
             <!-- - Default Rectangle -->
             <!-- Curve Top -->
-            <path class="curtain-svg__curve curtain-svg__curve_top-desktop" d="M0,300 C305.333333,100 625.333333,0 960,0 C1294.66667,0 1614.66667,100 1920,300 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,300 Z"></path>
+            <path fill="white" class="curtain-svg__curve curtain-svg__curve_top-desktop" d="M0,300 C305.333333,100 625.333333,0 960,0 C1294.66667,0 1614.66667,100 1920,300 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,300 Z"></path>
             <path class="curtain-svg__curve curtain-svg__curve_top-mobile" d="M0,150 C305.333333,50 625.333333,0 960,0 C1294.66667,0 1614.66667,50 1920,150 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,150 Z"></path>
             <!-- - Curve Top -->
             <!-- Curve Bottom -->
-            <path class="curtain-svg__curve curtain-svg__curve_bottom-desktop" d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,980 1294.66667,930 960,930 C625.333333,930 305.333333,980 0,1080 L0,0 Z"></path>
-            <path class="curtain-svg__curve curtain-svg__curve_bottom-mobile" d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1030 1294.66667,1005 960,1005 C625.333333,1005 305.333333,1030 0,1080 L0,0 Z"></path>
+            <path fill="white" class="curtain-svg__curve curtain-svg__curve_bottom-desktop" d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,980 1294.66667,930 960,930 C625.333333,930 305.333333,980 0,1080 L0,0 Z"></path>
+            <path fill="white" class="curtain-svg__curve curtain-svg__curve_bottom-mobile" d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1030 1294.66667,1005 960,1005 C625.333333,1005 305.333333,1030 0,1080 L0,0 Z"></path>
             <!-- - Curve Bottom -->
           </svg>
         </div>
@@ -110,12 +110,12 @@
       <!-- PAGE HEADER -->
       <header class="header header_menu-right header_fixed container-fluid js-header-sticky header--bottom mg-page-header-main"
               id="page-header"
-              data-arts-theme-text="dark"
-              data-arts-header-sticky-theme="bg-white"
+              data-arts-theme-text="light"
+              data-arts-header-sticky-theme="bg-dark"
               data-arts-header-logo="primary"
               data-arts-header-sticky-logo="primary"
-              data-arts-header-overlay-theme="white"
-              data-arts-header-overlay-background="#fff">
+              data-arts-header-overlay-theme="dark"
+              data-arts-header-overlay-background="#111111">
 
       <!-- top bar -->
         <div class="header__container header__controls">
@@ -123,8 +123,8 @@
             <!-- logo -->
             <div class="col-auto header__col header__col-left"><a class="logo" href="home.html">
                 <div class="logo__wrapper-img">
-                  <!-- primary logo version (for dark backgrounds)--><img class="logo__img-primary" src="img/general/logo_adityaa.svg" alt="Adityaa Solar" height="20"/>
-                  <!-- secondary logo version (for dark backgrounds)--><img class="logo__img-secondary" src="img/general/logo_adityaa.svg" alt="Adityaa Solar" height="20"/>
+                  <!-- primary logo version (for dark backgrounds)--><img class="logo__img-primary" src="img/general/logo.png" alt="Adityaa Solar" width="125px" height="25px"/>
+                  <!-- secondary logo version (for dark backgrounds)--><img class="logo__img-secondary" src="img/general/logo.png" alt="Adityaa Solar" width="125px" height="25px"/>
                 </div></a>
             </div>
             <!-- - logo -->
@@ -136,23 +136,12 @@
                 <div class="header__burger-line"></div>
               </div>
             </div>
-            <!-- - burger icon -->
-            <!-- "back" button for submenu nav -->
-            <div class="header__overlay-menu-back" id="js-submenu-back">
-              <div class="arrow arrow-left js-arrow arrow_mini" data-arts-cursor="data-arts-cursor" data-arts-cursor-hide-native="true" data-arts-cursor-scale="0" data-arts-cursor-magnetic="data-arts-cursor-magnetic">
-                <svg class="svg-circle" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                  <circle class="circle" cx="30" cy="30" r="29" fill="none"></circle>
-                </svg>
-                <div class="arrow__pointer arrow-left__pointer"></div>
-                <div class="arrow__triangle"></div>
-              </div>
-            </div>
-            <!-- - "back" button for submenu nav -->
+
           </div>
         </div>
         <!-- - top bar -->
         <!-- fullscreen overlay container -->
-        <div class="header__wrapper-overlay-menu container-fluid container-fluid_paddings align-items-center align-content-center">
+        <div class="header__wrapper-overlay-menu mg-header__wrapper-overlay-menu container-fluid container-fluid_paddings align-items-center align-content-center" style="background-color: white;">
           <!-- fullscreen menu -->
           <div class="header__wrapper-menu flex-column align-items-center align-content-center">
             <ul class="menu-overlay js-menu-overlay">
@@ -181,56 +170,59 @@
       <div class="js-smooth-scroll bg-dark-1" id="page-wrapper" data-barba="container">
         <main class="page-wrapper__content">
           <!-- section MASTHEAD -->
-          <section class="section section-masthead d-none" data-background-color="var(--color-dark-1)"></section>
+          <section class="section section-masthead d-none"></section>
           <!-- - section MASTHEAD -->
           <!-- section PROJECTS SLIDER FULLSCREEN -->
-          <section class="section section-fullheight section-projects section-projects-slider bg-dark-1 overflow" data-arts-theme-text="dark" data-arts-os-animation="true">
+          <section class="section section-fullheight section-projects section-projects-slider bg-dark-1 overflow" data-arts-theme-text="light" data-arts-os-animation="true">
             <div class="section-fullheight__inner section-fullheight__inner_mobile">
               <div class="slider slider-fullscreen-projects js-slider-fullscreen-projects js-slider">
                 <!-- slider CONTENT -->
 
                 <div class="slider-fullscreen-projects__content slider-fullscreen-projects__content_reduced-sides swiper-container js-slider-fullscreen-projects__content">
                   <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <h2 class="h1 slider__heading js-split-text" data-split-text-type="lines, words, chars" style="color: white;">POWERING A BRIGHTER FUTURE WITH ADITYAA SOLAR</h2>
-                        <div class="slider__wrapper-button mt-0-5">
-                          <div class="change-text-hover small-caps js-change-text-hover">
-                          </div>
-                        </div></div>
                     <div class="swiper-slide"><a class="d-inline-block js-change-text-hover" data-pjax-link="fullscreenSlider">
-                        <h2 class="h1 slider__heading js-split-text" data-split-text-type="lines, words, chars">PHOTOVOLTAIC MODULES</h2>
+                      <h2 class="h1 slider__heading js-split-text" data-split-text-type="lines, words, chars" style="color: #111111;">POWERING A BRIGHTER FUTURE WITH ADITYAA SOLAR</h2>
+                      <div class="slider__wrapper-button mt-0-5">
+                        <div class="change-text-hover small-caps js-change-text-hover">
+                          <!-- label by default -->
+                          <div class="change-text-hover__normal js-split-text split-text change-text-white" data-split-text-type="" data-split-text-set="lines"> <a href="product_slider.html" style="color: #111111;">Explore</a></div>
+
+                        </div>
+                      </div></a></div>
+                    <div class="swiper-slide"><a class="d-inline-block js-change-text-hover" data-pjax-link="fullscreenSlider">
+                        <h2 class="h1 slider__heading js-split-text" data-split-text-type="lines, words, chars" style="color: #111111;">PHOTOVOLTAIC MODULES</h2>
                         <div class="slider__wrapper-button mt-0-5">
                           <div class="change-text-hover small-caps js-change-text-hover">
                             <!-- label by default -->
-                            <div class="change-text-hover__normal js-split-text split-text change-text-white" data-split-text-type="" data-split-text-set="lines"> <a href="product_slider.html" style="color: white">Explore</a></div>
+                            <div class="change-text-hover__normal js-split-text split-text change-text-white" data-split-text-type="" data-split-text-set="lines"> <a href="product_slider.html" style="color: black">Explore</a></div>
 
                           </div>
                         </div></a></div>
                     <div class="swiper-slide"><a class="d-inline-block js-change-text-hover" data-pjax-link="fullscreenSlider">
-                        <h2 class="h1 slider__heading js-split-text" data-split-text-type="lines, words, chars">PHOTOVOLTAIC MODULES</h2>
+                        <h2 class="h1 slider__heading js-split-text" data-split-text-type="lines, words, chars" style="color: #111111;">PHOTOVOLTAIC MODULES</h2>
                         <div class="slider__wrapper-button mt-0-5">
                           <div class="change-text-hover small-caps js-change-text-hover">
                             <!-- label by default -->
-                            <div class="change-text-hover__normal js-split-text split-text change-text-white" data-split-text-type="" data-split-text-set="lines"> <a href="product_slider.html" style="color: white">Explore</a></div>
+                            <div class="change-text-hover__normal js-split-text split-text change-text-white" data-split-text-type="" data-split-text-set="lines"> <a href="product_slider.html" style="color: black">Explore</a></div>
                             <!-- - label on hover -->
                           </div>
                         </div></a></div>
                     <div class="swiper-slide"><a class="d-inline-block js-change-text-hover" data-pjax-link="fullscreenSlider">
-                        <h2 class="h1 slider__heading js-split-text" data-split-text-type="lines, words, chars">EV HOME CHARGERS</h2>
+                        <h2 class="h1 slider__heading js-split-text" data-split-text-type="lines, words, chars" style="color: #111111;">EV HOME CHARGERS</h2>
                         <div class="slider__wrapper-button mt-0-5">
                           <div class="change-text-hover small-caps js-change-text-hover">
                             <!-- label by default -->
-                            <div class="change-text-hover__normal js-split-text split-text change-text-white" data-split-text-type="" data-split-text-set="lines"> <a href="product_slider.html" style="color: white">Explore</a></div>
+                            <div class="change-text-hover__normal js-split-text split-text change-text-white" data-split-text-type="" data-split-text-set="lines"> <a href="product_slider.html" style="color: black">Explore</a></div>
                             <!-- - label on hover -->
                           </div>
                         </div></a>
                     </div>
                     <div class="swiper-slide"><a class="d-inline-block js-change-text-hover" data-pjax-link="fullscreenSlider">
-                      <h2 class="h1 slider__heading js-split-text" data-split-text-type="lines, words, chars">CAR PORTS</h2>
+                      <h2 class="h1 slider__heading js-split-text" data-split-text-type="lines, words, chars" style="color: #111111;">CAR PORTS</h2>
                       <div class="slider__wrapper-button mt-0-5">
                         <div class="change-text-hover small-caps js-change-text-hover">
                           <!-- label by default -->
-                          <div class="change-text-hover__normal js-split-text split-text change-text-white" data-split-text-type="" data-split-text-set="lines"> <a href="product_slider.html" style="color: white">Explore</a></div>
+                          <div class="change-text-hover__normal js-split-text split-text change-text-white" data-split-text-type="" data-split-text-set="lines"> <a href="product_slider.html" style="color: black">Explore</a></div>
                           <!-- - label on hover -->
                         </div>
                       </div></a>
@@ -241,29 +233,11 @@
                 <!-- slider IMAGES -->
                 <div class="slider-fullscreen-projects__images swiper-container js-slider-fullscreen-projects__images" data-mousewheel-enabled="data-mousewheel-enabled" data-direction="vertical" data-transition-effect="enterLeave" data-speed="1200" data-counter-style="roman" data-autoplay-enabled="false" data-touch-ratio="1.5">
                   <div class="swiper-wrapper swiper-wrapper-hero ">
-
-
-                    <div class="swiper-slide ">
-                      <div class="slider__images-slide-inner js-transition-img overflow bg-white " data-swiper-parallax="90%">
-                        <div class="slider__bg swiper-lazy js-transition-img__transformed-el bg-white m-1 background-video">
-                            <div class="bg-dark-1 h-100 image-radius">
-                          <video autoplay muted loop playsinline class="w-100 video-border-radius ">
-                            <source src="vid/hero.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                          </video>
-                            </div>
-
-                        </div>
-                      </div>
-
-
-                    </div>
                     <div class="swiper-slide overflow">
                       <div class="slider__images-slide-inner js-transition-img overflow" data-swiper-parallax="90%">
                         <div class="slider__bg swiper-lazy js-transition-img__transformed-el">
-                          <div class="overlay overlay_dark"></div>
                           <video autoplay muted loop playsinline>
-                            <source src="vid/panel.mp4" type="video/mp4">
+                            <source src="vid/hero1.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                           </video>
                         </div>
@@ -272,9 +246,18 @@
                     <div class="swiper-slide overflow">
                       <div class="slider__images-slide-inner js-transition-img overflow" data-swiper-parallax="90%">
                         <div class="slider__bg swiper-lazy js-transition-img__transformed-el">
-                          <div class="overlay overlay_dark"></div>
+                          <video autoplay muted loop playsinline>
+                            <source src="vid/sec1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                          </video>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide overflow">
+                      <div class="slider__images-slide-inner js-transition-img overflow" data-swiper-parallax="90%">
+                        <div class="slider__bg swiper-lazy js-transition-img__transformed-el">
                           <video autoplay muted loop playsinline >
-                            <source src="vid/hero.mp4" type="video/mp4">
+                            <source src="vid/hero1.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                           </video>
                         </div>
@@ -283,7 +266,6 @@
                     <div class="swiper-slide overflow">
                       <div class="slider__images-slide-inner js-transition-img overflow" data-swiper-parallax="90%">
                         <div class="slider__bg swiper-lazy js-transition-img__transformed-el">
-                          <div class="overlay overlay_dark"></div>
                           <video autoplay muted loop playsinline>
                             <source src="vid/residential.mp4" type="video/mp4">
                             Your browser does not support the video tag.
@@ -294,7 +276,6 @@
                     <div class="swiper-slide overflow">
                       <div class="slider__images-slide-inner js-transition-img overflow" data-swiper-parallax="90%">
                         <div class="slider__bg swiper-lazy js-transition-img__transformed-el">
-                          <div class="overlay overlay_dark"></div>
                           <video autoplay muted loop playsinline>
                             <source src="vid/car.mp4" type="video/mp4">
                             Your browser does not support the video tag.

@@ -134,75 +134,75 @@
   --font-secondary: "Cinzel", serif;
   /* Colors */
   --color-dark-1: #111111;
-  --color-dark-2: #ffffff;
+  --color-dark-2: #000000;
   --color-dark-3: #333333;
   --color-dark-4: #555555;
   --color-light-1: #eeece6;
   --color-light-2: #f2f1ed;
   --color-light-3: #f7f6f3;
   --color-light-4: #f1e9db;
-  --color-gray-1: #ffffff;
+  --color-gray-1: #000000;
   --color-gray-2: #cccccc;
   /* XL heading */
   --xl-max-font-size: 188;
   --xl-min-font-size: 54;
   --xl-line-height: 1.1;
-  --xl-color-light: #ffffff;
-  --xl-color-dark: #ffffff;
+  --xl-color-light: #000000;
+  --xl-color-dark: #000000;
   /* h1 heading */
   --h1-max-font-size: 104;
   --h1-min-font-size: 35;
   --h1-line-height: 1.13;
-  --h1-color-light: #ffffff;
-  --h1-color-dark: #ffffff;
+  --h1-color-light: #000000;
+  --h1-color-dark: #000000;
   /* h2 heading */
   --h2-max-font-size: 65;
   --h2-min-font-size: 31;
   --h2-line-height: 1.31;
-  --h2-color-light: #ffffff;
-  --h2-color-dark: #ffffff;
+  --h2-color-light: #000000;
+  --h2-color-dark: #000000;
   /* h3 heading */
   --h3-max-font-size: 42;
   --h3-min-font-size: 24;
   --h3-line-height: 1.29;
-  --h3-color-light: #ffffff;
-  --h3-color-dark: #ffffff;
+  --h3-color-light: #000000;
+  --h3-color-dark: #000000;
   /* h4 heading */
   --h4-max-font-size: 26;
   --h4-min-font-size: 22;
   --h4-line-height: 1.62;
-  --h4-color-light: #ffffff;
-  --h4-color-dark: #ffffff;
+  --h4-color-light: #000000;
+  --h4-color-dark: #000000;
   /* h5 heading */
   --h5-max-font-size: 18;
   --h5-min-font-size: 18;
   --h5-line-height: 1.6;
-  --h5-color-light: #ffffff;
+  --h5-color-light: #000000;
   --h5-color-dark: #ffffff;
   /* h6 heading */
   --h6-max-font-size: 14;
   --h6-min-font-size: 14;
   --h6-line-height: 1.6;
-  --h6-color-light: #ffffff;
-  --h6-color-dark: #ffffff;
+  --h6-color-light: #000000;
+  --h6-color-dark: #000000;
   /* Blockquote */
   --blockquote-max-font-size: 24;
   --blockquote-min-font-size: 16;
   --blockquote-line-height: 1.6;
   --blockquote-color-light: #ffffff;
-  --blockquote-color-dark: #ffffff;
+  --blockquote-color-dark: #000000;
   /* Paragraph */
   --paragraph-max-font-size: 18;
   --paragraph-min-font-size: 16;
   --paragraph-line-height: 1.8;
-  --paragraph-color-light: #ffffff;
-  --paragraph-color-dark: #ffffff;
+  --paragraph-color-light: #000000;
+  --paragraph-color-dark: #000000;
   /* Dropcap */
   --dropcap-max-font-size: 110;
   --dropcap-min-font-size: 60;
   --dropcap-line-height: 0.7;
   --dropcap-color-light: #ffffff;
-  --dropcap-color-dark: #ffffff;
+  --dropcap-color-dark: #000000;
   /* Fluid paddings & margins (min values) */
   --distance-min-xsmall: 30;
   --distance-min-small: 30;
@@ -310,8 +310,8 @@ a:hover {
   height: 60px;
 }
 .arrow .circle {
-  stroke: rgba(128, 128, 128, 0.5);
-  stroke-width: 1px;
+  stroke: rgba(0, 0, 0, 0.5);
+  stroke-width: 2px;
 }
 .arrow:hover .arrow__pointer {
   background-color: var(--color-dark-2);
@@ -362,7 +362,7 @@ a:hover {
   top: 0;
   bottom: 0;
   margin: auto;
-  background-color: rgba(128, 128, 128, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   transform-origin: right center;
 }
@@ -371,7 +371,7 @@ a:hover {
   display: inline-block;
   border-style: solid;
   border-width: 6px 0 6px 8px;
-  border-color: transparent transparent transparent rgba(128, 128, 128, 0.5);
+  border-color: transparent transparent transparent rgba(0, 0, 0, 0.5);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -3268,7 +3268,7 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   color: #fff;
 }
 .header[data-arts-theme-text=light] .header__burger-line {
-  background-color: #fff;
+  background-color: #000000;
 }
 
 .header.bg-dark-1 .header__burger-line, .header.bg-dark-2 .header__burger-line, .header.bg-dark-3 .header__burger-line, .header.bg-dark-4 .header__burger-line {
@@ -3316,7 +3316,7 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   background-color: var(--color-gray-1);
 }
 .header.opened[data-arts-header-overlay-theme=dark] .header__burger:hover .header__burger-line {
-  background-color: #fff;
+  background-color: #000000;
 }
 .header.opened[data-arts-header-overlay-theme=dark] a {
   color: var(--color-gray-1);
@@ -3337,7 +3337,7 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   stroke: var(--color-gray-1);
 }
 .header.opened[data-arts-header-overlay-theme=dark] .header__overlay-menu-back:hover .arrow__pointer {
-  background-color: #fff;
+  background-color: #000000;
 }
 .header.opened[data-arts-header-overlay-theme=dark] .header__overlay-menu-back:hover .arrow__triangle {
   border-color: transparent transparent transparent #fff;
@@ -7052,7 +7052,7 @@ small, .small {
  * 94. Themes
  * ======================================================================!*/
 [data-arts-theme-text=light] {
-  color: #fff;
+  color: #000000;
 }
 [data-arts-theme-text=light] .xl {
   color: var(--xl-color-light);
@@ -7133,13 +7133,13 @@ small, .small {
   background-color: #111111;
 }
 [data-arts-theme-text=dark] .arrow:hover .circle {
-  stroke: #fff;
+  stroke: #000000;
 }
 .turn-arrow-dark:hover .circle-dark {
   stroke: #111111;
 }
 [data-arts-theme-text=light] .arrow:hover .arrow__triangle {
-  border-color: transparent transparent transparent #fff;
+  border-color: transparent transparent transparent #000000;
 }
 
 .arrow:hover .arrow__triangle-black {
@@ -11453,32 +11453,36 @@ h2.change-text-white {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: white; /* White background */
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 9999;
   opacity: 1;
-  transition: opacity 0.5s ease-out;
+  transition: opacity 2s ease-out; /* Increased transition duration to 1s */
+  pointer-events: none; /* Prevents interaction during fade-out */
 }
 
-/* Lottie container for animation */
-/* Default styles for larger screens (desktop/tablet) */
-.lottie-container {
-  width: 40vw; /* 40% of the viewport width */
-  height: 40vh; /* 40% of the viewport height */
-}
-
-/* Mobile devices (adjust as needed) */
-@media (max-width: 767px) {
-  .lottie-container {
-    width: 70vw; /* 70% of the viewport width */
-    height: 70vh; /* 70% of the viewport height */
-  }
-}
-
-
-/* Hidden content */
+/* Add fade-in animation for content */
 #content {
   display: none;
+  opacity: 0;
+  transition: opacity 2s ease-in;
+}
+
+.content-visible {
+  opacity: 1 !important;
+}
+
+/* Rest of your CSS remains the same */
+.lottie-container {
+  width: 40vw;
+  height: 40vh;
+}
+
+@media (max-width: 767px) {
+  .lottie-container {
+    width: 70vw;
+    height: 70vh;
+  }
 }
