@@ -304,7 +304,7 @@ function initComponents({
 
 	// init page header one time only
 	if (typeof window.theme.header === 'undefined') {
-		if (window.location.pathname === '/rhye-creative-ajax-html5-template-2023-11-27-05-22-53-utc/HTML/home.html') {
+		if (window.location.pathname === '/home.html') {
 			// Initialize HeroHeader for home page
 			window.theme.header = new HeaderHero();
 			console.log("Initialized Hero Header for home page");
@@ -439,7 +439,7 @@ function initComponentsOnce({
 	scope = window.$document,
 	container = window.$pageWrapper
 }) {
-	if (window.location.pathname === '/rhye-creative-ajax-html5-template-2023-11-27-05-22-53-utc/HTML/home.html') {
+	if (window.location.pathname === '/home.html') {
 		// Initialize HeroHeader for home page
 		window.theme.header = new HeaderHero();
 		console.log("Initialized Hero Header for home page");
@@ -10428,7 +10428,7 @@ window.onload = function() {
 // Use both 'load' and 'DOMContentLoaded' events for better coverage
 function updatePadding() {
 	// Check if current page is the home page
-	if (window.location.pathname === '/rhye-creative-ajax-html5-template-2023-11-27-05-22-53-utc/HTML/home.html') {
+	if (window.location.pathname === '/home.html') {
 		// Initialize HeroHeader for home page
 		window.theme.header = new HeaderHero();
 		console.log("Initialized Hero Header for home page");
