@@ -3075,6 +3075,30 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   justify-content: center;
   flex-wrap: wrap;
   position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 500;
+  background: none !important;
+  background-color: unset !important;
+  color: #111111;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: initial;
+  padding-top: 0;
+}
+
+.mg-header__wrapper-overlay-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: fixed;
+  top:calc(-90vh + 40px);
   left: 0;
   width: 100vw;
   height: 100vh;
@@ -3147,6 +3171,9 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
 
 @media screen and (max-width: 991px) {
   .header__wrapper-overlay-menu {
+    text-align: center;
+  }
+  .mg-header__wrapper-overlay-menu {
     text-align: center;
   }
   .header__wrapper-menu {
@@ -11414,6 +11441,10 @@ h2.change-text-white {
 .pad-top {
   top: calc(-90vh + 40px);
 }
+
+.pad-zero {
+  top: 0;
+}
 .contact-container {
   flex: 1;
   display: flex;
@@ -11479,5 +11510,32 @@ h2.change-text-white {
   .lottie-container {
     width: 70vw;
     height: 70vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .resp {
+    flex-direction: column !important; /* Change to column layout */
+    padding-top: 50px !important;
+  }
+
+  .resp section {
+    width: 100% !important; /* Ensure full width */
+    height: auto !important; /* Allow height to adjust */
+  }
+
+  .resp .section {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  .resp .form-container {
+    height: auto !important; /* Adjust form height */
+  }
+
+  .resp .form-contact {
+    padding: 1rem !important; /* Adjust padding */
   }
 }
