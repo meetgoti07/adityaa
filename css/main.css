@@ -11550,3 +11550,202 @@ h2.change-text-white {
 .menu-hover-container:hover .menu-hover-text {
   border-bottom: 1px solid;
 }
+
+.gallery-wrap {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding-top: 66px;
+  height: calc(100dvh - 66px);
+}
+
+.item {
+  flex: 1;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; /* 'none' is incorrect, should be 'no-repeat' */
+  transition: all 0.8s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #E87033; /* Fixed the border property */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px 5px 5px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+
+  &:hover {
+    flex: 7;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+}
+
+/* Container for all items */
+.container-acc {
+  display: flex;
+  width: 100%;
+  height: 92vh; /* Use viewport height to ensure it takes up 90% of the viewport height */
+  overflow: hidden; /* Ensure no overflow */
+}
+
+/* Base item styles */
+.item {
+  flex: 1;
+  height: 100%; /* Ensure items take up the full height of the container */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 0.8s ease;
+  position: relative;
+  cursor: pointer;
+  border-right: 1px solid rgba(232, 112, 51, 0.3);
+  overflow: hidden; /* Ensure no overflow within each item */
+}
+
+.item:last-child {
+  border-right: none;
+}
+
+/* Expanded state on hover */
+.item:hover {
+  flex: 7;
+}
+
+/* Content layout within each item */
+.item-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 2rem;
+  box-sizing: border-box;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 70%);
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.item:hover .item-content {
+  opacity: 1;
+}
+
+/* Image styling */
+.item-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+}
+.item-image img {
+  height: 70%;
+  object-fit: cover;
+}
+
+/* Title styling */
+.item-title {
+  color: white;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+  opacity: 1;
+  transform: translateY(20px);
+  transition: all 0.5s ease;
+}
+
+.item:hover .item-title {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Button styling */
+.item-button {
+  background-color: #E87033;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transform: translateY(60px);
+  opacity: 0;
+  transition: all 0.5s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.item:hover .item-button {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.item-button:hover {
+  background-color: #d05b20;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Different background colors for each item to distinguish them */
+.item-1 .item-image {
+  background-color: rgba(232, 112, 51, 0.1);
+}
+
+.item-2 .item-image {
+  background-color: rgba(232, 112, 51, 0.15);
+}
+
+.item-3 .item-image {
+  background-color: rgba(232, 112, 51, 0.2);
+}
+
+.item-4 .item-image {
+  background-color: rgba(232, 112, 51, 0.25);
+}
+
+.item-5 .item-image {
+  background-color: rgba(232, 112, 51, 0.3);
+  height: 100%;
+}
+
+/* Additional responsive adjustments */
+/* Additional responsive adjustments */
+@media (max-width: 768px) {
+  .container-acc {
+    flex-direction: column;
+    height: 100dvh; /* Full viewport height */
+  }
+
+  .item {
+    height: 16vh; /* Each item takes 20% of the viewport height */
+    border-right: none;
+    border-bottom: 1px solid rgba(232, 112, 51, 0.3);
+    flex: 1; /* Ensure equal distribution of height */
+  }
+
+  .item:hover {
+    flex: 1; /* Prevent expansion on hover in mobile view */
+  }
+
+  .item-content {
+    padding: 1rem; /* Reduce padding for smaller screens */
+  }
+
+  .item-title {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+    margin-bottom: 0.5rem;
+  }
+
+  .item-button {
+    padding: 0.5rem 1rem; /* Adjust button padding for smaller screens */
+    font-size: 0.9rem;
+  }
+}

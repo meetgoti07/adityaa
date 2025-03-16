@@ -296,6 +296,8 @@ window.$window.on('load', function () {
  * You can init your custom scripts here
  * in that function
  */
+
+
 function initComponents({
 	scope = window.$document,
 	container = window.$pageWrapper,
@@ -348,10 +350,12 @@ function initComponents({
 		target: scope.find('.section-content'),
 		scope
 	});
-	new SectionProjectsSlider({
+	// Expose the slider instance globally (optional)
+	window.theme.sectionProjectsSlider = new SectionProjectsSlider({
 		target: scope.find('.section-projects-slider'),
 		scope
 	});
+
 	new SectionList({
 		target: scope.find('.section-list'),
 		scope
@@ -8221,6 +8225,7 @@ class SectionProjectsSlider extends ScrollAnimation {
 			scope: this.$scope,
 			target: this.$slider
 		});
+		this.getSlider = () => this.slider;
 		this.$activeSlide = this.$slider.find('.swiper-slide-active');
 		this.$activeHeading = this.$activeSlide.find('.slider__heading');
 		this.$activeSubheading = this.$activeSlide.find('.slider__subheading');
@@ -10377,7 +10382,31 @@ function syncAttributes($sourceElement, $targetElement) {
 	}
 }
 
+	document.addEventListener('DOMContentLoaded', function() {
+		// Give the slider component time to initialize
+		setTimeout(function() {
+			// Check if the slider component exists
+			if (window.theme && window.theme.sectionProjectsSlider) {
+				const sliderInstance = window.theme.sectionProjectsSlider.getSlider().sliderImg;
 
+				// Get all "Learn More" buttons
+				const learnMoreButtons = document.querySelectorAll('.learn-more');
+
+				// Add click event listeners to each button
+				learnMoreButtons.forEach(button => {
+					button.addEventListener('click', function() {
+						// Get the target slide index from the data attribute
+						const slideIndex = parseInt(button.getAttribute('data-slide-index'));
+
+						// Navigate to the target slide
+						sliderInstance.slideTo(slideIndex);
+					});
+				});
+			} else {
+				console.warn('Slider component not found. Make sure it is properly initialized.');
+			}
+		}, 500); // Small delay to ensure component is ready
+	});
 })(jQuery);
 
 
