@@ -11543,3 +11543,10 @@ h2.change-text-white {
     padding: 1rem !important; /* Adjust padding */
   }
 }
+.menu-hover-text {
+  position: relative;
+}
+
+.menu-hover-container:hover .menu-hover-text {
+  border-bottom: 1px solid;
+}
