@@ -27,13 +27,15 @@
     .container {
       text-align: center;
       align-items: center;
-      display: none; /* Changed from opacity: 0 to display: none */
+      display: none;
       flex-direction: column;
+      opacity: 0; /* Start with opacity 0 */
+      transition: opacity 1.5s ease-in; /* Smooth transition for fade-in */
     }
 
     /* Big logo */
     .logo {
-      width: 50vw;
+      width: 30vw;
       height: auto;
     }
 
@@ -67,15 +69,10 @@
       }
     }
 
-    /* Added fade-in animation */
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-
+    /* Content visible class */
     .content-visible {
       display: flex !important;
-      animation: fadeIn 1s ease-in forwards;
+      opacity: 1;
     }
   </style>
   <link rel="stylesheet" type="text/css" href="css/main.css"/>
@@ -94,29 +91,74 @@
 <script src="js/components.js"></script>
 
 <script>
-  window.onload = function() {
+  document.addEventListener('DOMContentLoaded', function() {
     const preloader = document.getElementById('preloader');
     const content = document.getElementById('content');
+    let animationComplete = false;
 
-    // After preloader (7 seconds)
-    setTimeout(() => {
-      // Fade out preloader
+    // Function to handle preloader completion
+    function hidePreloader() {
+      console.log('Hiding preloader');
+
+      // Start fading out the preloader
       preloader.style.opacity = '0';
 
-      // Show and fade in content
-      content.classList.add('content-visible');
-
-      // Remove preloader after fade
+      // Wait for preloader fade-out to complete before showing content
       setTimeout(() => {
+        // Remove preloader from DOM
         preloader.remove();
-      }, 1000);
 
-      // Wait 3 more seconds then redirect
-      setTimeout(() => {
-        window.location.href = 'home.html';
-      }, 3000);
-    }, 6700);
-  };
+        // Now show content
+        content.style.display = 'flex';
+
+        // Trigger reflow to ensure display change is processed before adding the class
+        void content.offsetWidth;
+
+        // Add class to start the fade-in animation
+        setTimeout(() => {
+          content.classList.add('content-visible');
+        }, 50);
+
+        // Wait 3 more seconds then redirect to home
+        setTimeout(() => {
+          window.location.href = 'home.html';
+        }, 3000);
+      }, 1000);
+    }
+
+    // Initialize Lottie animation
+    fetch('animation.json')
+            .then(response => response.json())
+            .then(animationData => {
+              const animation = lottie.loadAnimation({
+                container: document.getElementById('lottie-animation'),
+                renderer: 'svg',
+                loop: false, // Make sure this is false so the animation completes
+                autoplay: true,
+                animationData: animationData
+              });
+
+              // When animation completes, hide preloader
+              animation.addEventListener('complete', function() {
+                console.log('Animation complete event fired');
+                animationComplete = true;
+                hidePreloader();
+              });
+            })
+            .catch(error => {
+              console.error("Error loading Lottie animation:", error);
+              // If there's an error loading the animation, show content anyway after a delay
+              setTimeout(hidePreloader, 3000);
+            });
+
+    // Fallback in case animation doesn't complete or event doesn't fire
+    setTimeout(function() {
+      if (!animationComplete) {
+        console.log('Fallback timeout triggered');
+        hidePreloader();
+      }
+    }, 10000); // 10 second fallback
+  });
 </script>
 </body>
 </html>

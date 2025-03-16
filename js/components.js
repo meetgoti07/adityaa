@@ -10383,48 +10383,6 @@ function syncAttributes($sourceElement, $targetElement) {
 
 // Load Lottie animation
 
-fetch('animation.json')
-	.then(response => response.json())
-	.then(animationData => {
-		// Initialize Lottie animation
-		lottie.loadAnimation({
-			container: document.getElementById('lottie-animation'), // The container for the animation
-			renderer: 'svg', // Render as SVG
-			loop: false, // Loop the animation
-			autoplay: true, // Start animation automatically
-			animationData: animationData // Pass the fetched animation data
-		});
-	})
-	.catch(error => {
-		console.error("Error loading Lottie animation:", error);
-	});
-
-// Function to hide the preloader and display the page content after exactly 7 seconds
-window.onload = function() {
-	const preloader = document.getElementById('preloader');
-	const content = document.getElementById('content');
-
-	setTimeout(() => {
-		// Start fading out the preloader
-		preloader.style.opacity = '0';
-
-		// Show content and start its fade-in
-		content.style.display = 'block';
-
-		// Small delay to ensure display: block has taken effect
-		setTimeout(() => {
-			content.classList.add('content-visible');
-		}, 50);
-
-		// Remove preloader from DOM after fade-out is complete
-		setTimeout(() => {
-			preloader.remove();
-		}, 1000); // Match this with the transition duration
-	}, 6700);
-};
-
-
-
 // Use both 'load' and 'DOMContentLoaded' events for better coverage
 function updatePadding() {
 	// Check if current page is the home page

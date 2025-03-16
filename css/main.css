@@ -310,20 +310,20 @@ a:hover {
   height: 60px;
 }
 .arrow .circle {
-  stroke: rgba(0, 0, 0, 0.5);
+  stroke: #E87033;
   stroke-width: 2px;
 }
 .arrow:hover .arrow__pointer {
-  background-color: var(--color-dark-2);
+  background-color: #E87033;
 }
 .arrow:hover .arrow__pointer-black {
-  background-color: #111111;
+  background-color: #E87033;
 }
 .arrow:hover .circle {
-  stroke: var(--color-dark-2);
+  stroke: #E87033;
 }
 .arrow:hover .arrow__triangle {
-  border-color: transparent transparent transparent var(--color-dark-2);
+  border-color: transparent transparent transparent #E87033;
 }
 
 .arrow_mini .svg-circle {
@@ -362,7 +362,7 @@ a:hover {
   top: 0;
   bottom: 0;
   margin: auto;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #E87033;
   transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   transform-origin: right center;
 }
@@ -371,7 +371,7 @@ a:hover {
   display: inline-block;
   border-style: solid;
   border-width: 6px 0 6px 8px;
-  border-color: transparent transparent transparent rgba(0, 0, 0, 0.5);
+  border-color: transparent transparent transparent #E87033;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -845,7 +845,7 @@ a:hover {
 }
 .circle-button_link .circle-button__inner .svg-circle {
   border: none;
-  background-color: var(--color-dark-1);
+  background-color: #E87033;
   width: calc(1 * (90 * 1px));
   height: calc(1 * (90 * 1px));
 }
@@ -941,7 +941,7 @@ a:hover {
 }
 .circle-button__circle:hover .svg-circle {
   transform: scale(0.85);
-  border-color: rgb(104, 104, 104);
+  border-color: #E87033;
 }
 .circle-button__circle:hover ~ .circle-button__icon .svg-mouse__wheel {
   transform: translateY(4px);
@@ -3326,13 +3326,13 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   color: var(--color-dark-2);
 }
 .header.opened[data-arts-header-overlay-theme=light] .header__overlay-menu-back:hover .arrow .circle {
-  stroke: var(--color-dark-2);
+  stroke:#E87033;
 }
 .header.opened[data-arts-header-overlay-theme=light] .header__overlay-menu-back:hover .arrow__pointer {
-  background-color: var(--color-dark-2);
+  background-color: #E87033;
 }
 .header.opened[data-arts-header-overlay-theme=light] .header__overlay-menu-back:hover .arrow__triangle {
-  border-color: transparent transparent transparent var(--color-dark-2);
+  border-color: transparent transparent transparent #E87033;
 }
 
 .header.opened[data-arts-header-overlay-theme=dark] {
@@ -3351,19 +3351,19 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   color: #fff;
 }
 .header.opened[data-arts-header-overlay-theme=dark] .header__overlay-menu-back .arrow .circle {
-  stroke: var(--color-gray-1);
+  stroke: #E87033;
 }
 .header.opened[data-arts-header-overlay-theme=dark] .header__overlay-menu-back .arrow__pointer {
   background-color: var(--color-gray-1);
 }
 .header.opened[data-arts-header-overlay-theme=dark] .header__overlay-menu-back .arrow__triangle {
-  border-color: transparent transparent transparent var(--color-gray-1);
+  border-color: transparent transparent transparent #E87033;
 }
 .header.opened[data-arts-header-overlay-theme=dark] .header__overlay-menu-back:hover .arrow .circle {
-  stroke: var(--color-gray-1);
+  stroke: #E87033;
 }
 .header.opened[data-arts-header-overlay-theme=dark] .header__overlay-menu-back:hover .arrow__pointer {
-  background-color: #000000;
+  background-color: #E87033;
 }
 .header.opened[data-arts-header-overlay-theme=dark] .header__overlay-menu-back:hover .arrow__triangle {
   border-color: transparent transparent transparent #fff;
@@ -3917,6 +3917,9 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   display: inline-block;
   padding: 8px 0;
 }
+
+
+
 
 /*!========================================================================
  * 46. Modal
@@ -6368,6 +6371,7 @@ select {
   text-align: center;
   z-index: 1 !important;
   opacity: 0.05 !important;
+  color: #3e5c9a;
 }
 
 .slider-fullscreen-projects__footer {
@@ -7156,16 +7160,16 @@ small, .small {
   color: #fff;
 }
 [data-arts-theme-text=light] .arrow:hover .arrow__pointer {
-  background-color: #111111;
+  background-color: #E87033;
 }
 [data-arts-theme-text=dark] .arrow:hover .circle {
-  stroke: #000000;
+  stroke: #E87033;
 }
 .turn-arrow-dark:hover .circle-dark {
   stroke: #111111;
 }
 [data-arts-theme-text=light] .arrow:hover .arrow__triangle {
-  border-color: transparent transparent transparent #000000;
+  border-color: transparent transparent transparent #E87033;
 }
 
 .arrow:hover .arrow__triangle-black {
@@ -7206,13 +7210,13 @@ small, .small {
   color: #fff;
 }
 [data-arts-theme-text=light] .circle-button__inner .svg-circle {
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid #E87033;
 }
 [data-arts-theme-text=light] .circle-button__inner .circle-button__icon {
   fill: #fff;
 }
 [data-arts-theme-text=light] .circle-button__circle:hover .svg-circle {
-  border-color: rgb(255, 255, 255);
+  border-color: #E87033;
 }
 [data-arts-theme-text=light] .section-nav-projects__link {
   color: #fff;
