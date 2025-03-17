@@ -147,10 +147,13 @@
             <!-- - logo -->
             <!-- burger icon -->
             <div class="col-auto header__col">
-              <div class="header__burger" id="js-burger" data-arts-cursor="data-arts-cursor" data-arts-cursor-scale="1.4" data-arts-cursor-magnetic="data-arts-cursor-magnetic" data-arts-cursor-hide-native="true">
-                <div class="header__burger-line"></div>
-                <div class="header__burger-line"></div>
-                <div class="header__burger-line"></div>
+              <div class="menu-hover-container" style="display: flex; align-items: center; cursor: pointer;">
+                <span class="menu-hover-text" style="margin-right: 10px;">menu</span>
+                <div class="header__burger" id="js-burger" data-arts-cursor="data-arts-cursor" data-arts-cursor-scale="1.4">
+                  <div class="header__burger-line"></div>
+                  <div class="header__burger-line"></div>
+                  <div class="header__burger-line"></div>
+                </div>
               </div>
             </div>
             <!-- - burger icon -->
@@ -171,21 +174,45 @@
         <!-- fullscreen overlay container -->
         <div class="header__wrapper-overlay-menu container-fluid container-fluid_paddings align-items-center align-content-center" style="top: 0;">
           <!-- fullscreen menu -->
-          <div class="header__wrapper-menu flex-column align-items-center align-content-center">
-            <ul class="menu-overlay js-menu-overlay">
-              <li class="menu-item-has-children"><a class="h2 change-text-black" href="home.html" data-pjax-link="overlayMenu">
-                <div class="menu-overlay__item-wrapper split-text js-split-text" data-split-text-type="lines">Home</div></a>
-              </li>
-              <li class="menu-item-has-children"><a class="h2 change-text-black" href="product_slider.html" data-pjax-link="overlayMenu">
-                <div class="menu-overlay__item-wrapper split-text js-split-text" data-split-text-type="lines">Products</div></a>
-              </li>
-              <li class="menu-item-has-children"><a class="h2 change-text-black" href="about.html" data-pjax-link="overlayMenu">
-                <div class="menu-overlay__item-wrapper split-text js-split-text " data-split-text-type="lines">About Us</div></a>
-              </li>
-              <li class="menu-item-has-children"><a class="h2 change-text-black" href="contact.html" data-pjax-link="overlayMenu">
-                <div class="menu-overlay__item-wrapper split-text js-split-text change-text-black" data-split-text-type="lines">Contact Us</div></a>
-              </li>
-            </ul>
+          <div class="header__wrapper-menu">
+            <div class="menu-container ">
+              <!-- Vertical "MENU" text -->
+              <div class="vertical-menu-text ">
+                <span>M</span>
+                <span>E</span>
+                <span>N</span>
+                <span>U</span>
+              </div>
+
+              <!-- Vertical strip -->
+              <div class="vertical-strip"></div>
+
+              <!-- Menu items -->
+              <div class="menu-items-container">
+                <ul class="menu-overlay js-menu-overlay">
+                  <li class="menu-item-has-children">
+                    <a class="h2 change-text-black" href="home.html" data-pjax-link="overlayMenu">
+                      <div class="menu-overlay__item-wrapper split-text js-split-text" data-split-text-type="lines">Home</div>
+                    </a>
+                  </li>
+                  <li class="menu-item-has-children">
+                    <a class="h2 change-text-black" href="product_slider.html" data-pjax-link="overlayMenu">
+                      <div class="menu-overlay__item-wrapper split-text js-split-text" data-split-text-type="lines">Products</div>
+                    </a>
+                  </li>
+                  <li class="menu-item-has-children">
+                    <a class="h2 change-text-black" href="about.html" data-pjax-link="overlayMenu">
+                      <div class="menu-overlay__item-wrapper split-text js-split-text" data-split-text-type="lines">About Us</div>
+                    </a>
+                  </li>
+                  <li class="menu-item-has-children">
+                    <a class="h2 change-text-black" href="contact.html" data-pjax-link="overlayMenu">
+                      <div class="menu-overlay__item-wrapper split-text js-split-text change-text-black" data-split-text-type="lines">Contact Us</div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
           <!-- - fullscreen menu -->
           <!-- fullscreen widgets -->
